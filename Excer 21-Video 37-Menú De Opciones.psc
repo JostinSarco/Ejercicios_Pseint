@@ -1,0 +1,34 @@
+// Hacer un programa que tenga un menú con las siguientes 
+// opciones:
+// Opción 1: Elevar un número a una potencia X.
+// Opción 2: Sacar la raíz cuadrada de un número.
+// Opción 3: Salir.
+// Diagrama N-S
+Proceso Ejercicio
+	Definir opcion como entero;
+	Escribir "MENÚ";
+	Escribir "1. Elevar un numero a una potencia X";
+	Escribir "2. Sacar la raiz cuadrada de un numero";
+	Escribir "3. Salir";
+	Escribir "Digite una opcion:";
+	Leer opcion;
+	Segun opcion Hacer
+		1:
+			Definir num,potencia,resultado como reales;
+			Escribir "Digite un numero:";
+			Leer num;
+			Escribir "Digite la potencia";
+			Leer potencia;
+			resultado <- num^potencia;
+			Escribir "El resultado es:",resultado;
+		2:
+			Definir num,raizc como reales;
+			Escribir "Digite un numero:";
+			Leer num;
+			raizc <- rc(num);
+			Escribir "El resultado es:",raizc;
+		3:
+		De Otro Modo:
+			Escribir "Se equivocó de opción de menú";
+	FinSegun
+FinProceso
